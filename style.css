@@ -369,49 +369,37 @@ section:first-of-type {
   white-space: nowrap;
 }
 .patrocinio{
-  /* display: flex; */
   width: 100%;
   height: 15vh;
-  /* justify-content: space-between; */
-  /* gap: 3rem; */
-  /* display: inline-flex; */
-  animation: patrocinio 10s infinite linear alternate;
-
   margin: 1rem 0rem;
-  /* background-color: #f4f4f4; */
-}
+  
+  animation: patrocinio 10s infinite linear alternate;
+  }
 .patrocinio img {
   gap: 1rem;
 }
-/* @keyframes scroll {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
-} */
+
 @keyframes patrocinio {
   0%, 20% {
-    background-image: url(./assets/img/Fender.png);
+    background-image: url(./assets/img/patro/patro-1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   25%, 45% {
-    background-image: url(./assets/img/California@2x.png);
+    background-image: url(./assets/img/patro/patro-2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   50%, 70% {
-    background-image: url(./assets/img/grolsh.png);
+    background-image: url(./assets/img/patro/patro-3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   75%, 100% {
-    background-image: url(./assets/img/buhero.jpg);
+    background-image: url(./assets/img/patro/patro-4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
