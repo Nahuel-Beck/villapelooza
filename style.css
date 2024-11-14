@@ -363,23 +363,23 @@ section:first-of-type {
   padding: 0rem;
 }
 
-#auspicio{
+#apoyos{
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
 }
-.patrocinio{
+.apoyadores{
   width: 100%;
   height: 15vh;
   margin: 1rem 0rem;
   
-  animation: patrocinio 10s infinite linear alternate;
+  animation: apoyadores 10s infinite linear alternate;
   }
-.patrocinio img {
+.apoyadores img {
   gap: 1rem;
 }
 
-@keyframes patrocinio {
+@keyframes apoyadores {
   0%, 20% {
     background-image: url(./assets/img/patro/patro-1.png);
     background-repeat: no-repeat;
