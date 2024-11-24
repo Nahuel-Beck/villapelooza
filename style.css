@@ -236,16 +236,6 @@ section:first-of-type {
   }
 }
 
-footer{
-  background-color: var(--negro-gris);
-}
-
-.ig {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0rem;
-}
-
 .portada h2 {
     font-family: 'Baloo-Bold';
     font-size: 5rem;
@@ -473,6 +463,17 @@ footer{
   }
 }
 
+@media (min-width:960px) {
+  .apoyos-mobile {
+    display: none;
+  }
+}
+@media (max-width:960px){
+  .apoyos-desktop{
+    display: none;
+  }
+}
+
 .apoyadores {
   width: 100%;
   height: 15vh;
@@ -592,6 +593,15 @@ footer{
   font-family: 'baloo-bold';
 }
 
+@media (max-width:960px) {
+  #mapa div:first-child h2{
+    font-size: 1.25rem;
+  }
+  #mapa div:first-child{
+    width: 60vw;
+  }
+}
+
 
 .mapa{
   width: 100%;
@@ -694,24 +704,96 @@ div.menu span a{
   font-family: 'baloo-bold';
   font-size: 3rem;
 }
+@media (max-width:960px) {
+  .nosotros{
+    width: 100%;
+    padding: 0rem 3rem;
+  }
+}
+
+
+
+/* FOOTER */
+
+footer{
+  background-color: var(--negro-gris);
+}
+
+.ig {
+  display: flex;
+  justify-content: start;
+}
+
+.ig a:hover i {
+  color: #f4f4f4;
+}
+
+@media (max-width:960px) {
+  .ig {
+    justify-content: end;
+  }
+}
 
 .footer-uno{
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   justify-content: space-between;
   align-items: center;
-  margin: auto 3rem;
+  margin: auto 10rem;
+  padding: 2rem 0rem;
 }
+
 .footer-uno div{
   width: 100%;
 }
 
-.footer-uno h2,
+.footer-uno a,
 .footer-uno h3,
 .footer-uno p {
   color: #7c7c7c;
 }
 
-.footer-uno h2 {
+.footer-uno .apoyos{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: .5rem;
+  align-items: end;
+}
+
+.footer-uno .apoyos a{
+  font-family: 'baloo-semibold';
   font-size: 1rem;
+  text-align: right;
+  text-decoration: none;
+  margin: 0;
+  width: fit-content;
+}
+
+.footer-uno .apoyos a i{
+  padding-left: 1rem;
+}
+
+@media (hover:hover) {
+  .footer-uno .apoyos a:hover i{
+    color: #a5a5a5;
+  }
+}
+
+@media (max-width:960px) {
+  .footer-uno {
+    margin: auto 2rem;
+    flex-direction: column;
+  }
+  .footer-uno .apoyos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer-uno .apoyos a{
+    width: 45%;
+    text-align: start;
+    justify-content: space-around;
+    display: flex;
+  }
 }
