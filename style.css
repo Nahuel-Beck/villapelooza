@@ -403,6 +403,11 @@ section:first-of-type {
 .info-artista > div > h5{
   padding: 0rem;
 }
+.info-artista h3,
+.info-artista h5 {
+  text-wrap: stable;
+  line-height: 100%;
+}
 
 #apoyos{
   display: flex;
