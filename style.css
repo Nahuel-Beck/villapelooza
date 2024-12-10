@@ -420,6 +420,11 @@ section:first-of-type {
   white-space: nowrap;
 }
 
+#apoyos h5{
+  margin: 0rem auto .5rem;
+}
+
+
 #apoyos h5,
 #apoyos h5 a {
   font-family: 'baloo-regular';
@@ -435,11 +440,14 @@ section:first-of-type {
   transition: all .3s;
 }
 
+#apoyos div h5 span {
+  font-family: 'baloo-bold';
+  text-transform: uppercase;
+}
+
 @media (hover:hover) {
   #apoyos h5 a.comunicate:hover {
-    padding: 0rem .3rem;
-    color: #f4f4f4;
-    background-color: var(--negro-gris);
+    color: var(--magenta);
     border-radius: 5px;
   }
 }
@@ -467,7 +475,8 @@ section:first-of-type {
     width: 33.33%;
   }
   #apoyos div:first-of-type{
-    text-align: end;
+    text-align: center;
+    margin-bottom: .2rem;
   }
 }
 
@@ -661,7 +670,7 @@ section:first-of-type {
 .apoyadores-img {
   height: 10rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: .5rem;
   padding: 0rem 3rem;
@@ -669,8 +678,19 @@ section:first-of-type {
   flex-wrap: wrap;
 }
 
+@media (max-width:960px) {
+  .apoyadores-img {
+    height: fit-content;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+  #apoyos h5 {
+    text-align: center;
+  }
+}
+
 .apoyadores-item img {
-  height: 4rem;
+  height: 5.65rem;
   object-fit: fill;
 }
 .apoyadores-item.cx-img img{
